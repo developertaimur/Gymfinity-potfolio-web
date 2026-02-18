@@ -48,7 +48,7 @@ const Navbar = () => {
                             target='blank'
                             className="px-6 py-2.5 bg-gymfinity-400 text-white text-sm font-semibold rounded-full hover:bg-gymfinity-600 transition-all duration-300 shadow-md shadow-gymfinity-400/25 hover:shadow-lg hover:shadow-gymfinity-400/30 hover:-translate-y-0.5"
                         >
-                            Log Innnn
+                            Log In
                         </a>
                     </div>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-label="Toggle menu"
                     >
-                        <svg className="w-6 h-6 text-gymfinity-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="w-2 h-2 text-gymfinity-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             {isMenuOpen ? (
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                             ) : (
@@ -66,6 +66,7 @@ const Navbar = () => {
                             )}
                         </svg>
                     </button>
+                    
                 </div>
 
                 {/* Mobile Menu */}
