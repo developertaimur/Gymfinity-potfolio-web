@@ -48,7 +48,7 @@ const Navbar = () => {
                             target='blank'
                             className="px-6 py-2.5 bg-gymfinity-400 text-white text-sm font-semibold rounded-full hover:bg-gymfinity-600 transition-all duration-300 shadow-md shadow-gymfinity-400/25 hover:shadow-lg hover:shadow-gymfinity-400/30 hover:-translate-y-0.5"
                         >
-                            Log Inn
+                            Log Innnn
                         </a>
                     </div>
 
