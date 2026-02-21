@@ -182,9 +182,9 @@
 
 
 import { motion } from "framer-motion";
-import moaaz from "../Assets/saif.jpeg";
-import taimur from "../Assets/saif.jpeg";
-import saif from "../Assets/saif.jpeg";
+import moaaz from "../Assets/moaaz.jpeg";
+import taimur from "../Assets/taimurc.jpeg";
+import saif from "../Assets/saifl.jpeg";
 
 const teamMembers = [
   {
@@ -203,7 +203,7 @@ const teamMembers = [
   },
   {
     name: "Saif",
-    role: "Sales & Marketing Head",
+    role: "Sales & Marketing Executive",
     image: saif,
     linkedin: 'https://www.linkedin.com/in/muhammad-saif-se'
   },
@@ -271,7 +271,7 @@ const OurTeam = () => {
             }`}
           >
             {/* Image */}
-            <div className="relative h-96 w-full overflow-hidden">
+            <div className="relative h-83 w-full overflow-hidden">
               <img
                 src={member.image}
                 alt={member.name}
