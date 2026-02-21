@@ -106,7 +106,7 @@ const Hero = () => {
                         <h1 className="animate-fadeInUp text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold text-gymfinity-900 leading-tight tracking-tight">
                             Boost your gym management. Start using{' '}
                             <span className="text-gymfinity-400 relative inline-block animate-pulse">
-                                Gymfinity
+                                GymFinity
                                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 8" fill="none">
                                     <path d="M1 5.5C47 2 153 2 199 5.5" stroke="#3aafa9" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
                                 </svg>
