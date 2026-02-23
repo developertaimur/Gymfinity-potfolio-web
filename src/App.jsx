@@ -36,6 +36,7 @@ import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import OurTeam from './components/OurTeam';
+import Testimonials from "./components/Testimonials";
 
 function App() {
     return (
@@ -54,6 +55,7 @@ function App() {
                             <Pricing />
                             <Contact />
                             <OurTeam/>
+                             <Testimonials />
                         </main>
                     } 
                 />
