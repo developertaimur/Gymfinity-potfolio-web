@@ -315,7 +315,7 @@ const OurTeam = () => {
 
 
 
-<section className="relative py-24 px-6 bg-gradient-to-br from-[#0f172a] via-[#0b1120] to-black overflow-hidden">
+<section id ="OurTeam"className="relative py-24 px-6 bg-gradient-to-br from-[#0f172a] via-[#0b1120] to-black overflow-hidden">
 
   {/* Background Glow */}
   <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gymfinity-400 opacity-20 blur-[150px] rounded-full pointer-events-none"></div>

@@ -113,7 +113,7 @@ const Navbar = () => {
         { name: 'Why Gymfinity', href: '#why-gymfinity' },
         { name: 'Pricing', href: '#pricing' },
         { name: 'Contact Us', href: '#contact' },
-        { name: 'Our Team', href: '#our team' },
+        { name: 'Our Team', href: '#OurTeam' },
     ];
 
     return (
