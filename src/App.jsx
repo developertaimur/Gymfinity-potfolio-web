@@ -37,6 +37,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import OurTeam from './components/OurTeam';
 import Testimonials from "./components/Testimonials";
+import PremiumFAQ from  "./components/PremiumFAQ";
 
 function App() {
     return (
@@ -53,9 +54,13 @@ function App() {
                             <Features />
                             <WhyGymfinity />
                             <Pricing />
-                            <Contact />
-                            <OurTeam/>
                              <Testimonials />
+                             <OurTeam/>
+                             
+                             <PremiumFAQ />
+                             <Contact />
+                           
+                        
                         </main>
                     } 
                 />

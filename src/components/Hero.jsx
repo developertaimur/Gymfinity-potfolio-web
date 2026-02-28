@@ -108,7 +108,7 @@ const Hero = () => {
                             <span className="text-gymfinity-400 relative inline-block animate-pulse">
                                 GymFinity
                                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 8" fill="none">
-                                    <path d="M1 5.5C47 2 153 2 199 5.5" stroke="#3aafa9" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
+                                    {/* <path d="M1 5.5C47 2 153 2 199 5.5" stroke="#3aafa9" strokeWidth="6" strokeLinecap="round" opacity="0.5" /> */}
                                 </svg>
                             </span>{' '}
                             today!
@@ -150,7 +150,7 @@ const Hero = () => {
                             </span>
                             <span className="flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-gymfinity-400"></span>
-                                14-day free trial
+                                07-day free trial
                             </span>
                         </div>
                     </div>
