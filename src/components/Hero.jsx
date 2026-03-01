@@ -89,19 +89,107 @@
 
 
 import heroDashboard from '../Assets/hero-dashboard.png';
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+
+    const lines = [
+        "Track revenue and expenses in real time.",
+        "Automate attendance & membership billing.",
+        "Generate powerful financial reports instantly.",
+        "Manage your entire gym from one dashboard."
+
+    ];
+
+    const [text, setText] = useState("");
+    const [index, setIndex] = useState(0);
+    const [subIndex, setSubIndex] = useState(0);
+    const [deleting, setDeleting] = useState(false);
+    const [blink, setBlink] = useState(true);
+
+    useEffect(() => {
+        const currentLine = lines[index];
+
+        if (!deleting && subIndex === currentLine.length) {
+            setTimeout(() => setDeleting(true), 1200);
+            return;
+        }
+
+        if (deleting && subIndex === 0) {
+            setDeleting(false);
+            setIndex((prev) => (prev + 1) % lines.length);
+            return;
+        }
+
+        const timeout = setTimeout(() => {
+            setSubIndex((prev) => prev + (deleting ? -1 : 1));
+        }, deleting ? 35 : 65); // 🔥 smoother speed
+
+        return () => clearTimeout(timeout);
+    }, [subIndex, index, deleting]);
+
+    useEffect(() => {
+        setText(lines[index].substring(0, subIndex));
+    }, [subIndex, index]);
+
+    // Cursor blink
+    useEffect(() => {
+        const blinkInterval = setInterval(() => {
+            setBlink((prev) => !prev);
+        }, 500);
+
+        return () => clearInterval(blinkInterval);
+    }, []);
+
+
+
+    //     const lines = [
+    //   "Track revenue and expenses in real time.",
+    //   "Automate attendance & membership billing.",
+    //   "Generate powerful financial reports instantly.",
+    //   "Manage your entire gym from one dashboard."
+    // ];
+
+    // const [text, setText] = useState("");
+    // const [index, setIndex] = useState(0);
+    // const [subIndex, setSubIndex] = useState(0);
+    // const [deleting, setDeleting] = useState(false);
+
+    // useEffect(() => {
+    //   const currentLine = lines[index];
+
+    //   if (!deleting && subIndex === currentLine.length) {
+    //     setTimeout(() => setDeleting(true), 1000);
+    //     return;
+    //   }
+
+    //   if (deleting && subIndex === 0) {
+    //     setDeleting(false);
+    //     setIndex((prev) => (prev + 1) % lines.length); // 🔥 SAFE LOOP
+    //     return;
+    //   }
+
+    //   const timeout = setTimeout(() => {
+    //     setSubIndex((prev) => prev + (deleting ? -1 : 1));
+    //   }, deleting ? 40 : 60);
+
+    //   return () => clearTimeout(timeout);
+    // }, [subIndex, index, deleting]);
+
+    // useEffect(() => {
+    //   setText(lines[index].substring(0, subIndex));
+    // }, [subIndex, index]);
     return (
         <section className="relative pt-24 lg:pt-32 pb-16 lg:pb-24 bg-gradient-to-br from-white via-gymfinity-100/30 to-gray-50 overflow-hidden">
-            
+
             <div className="absolute top-20 right-0 w-96 h-96 bg-gymfinity-400/5 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-72 h-72 bg-gymfinity-400/5 rounded-full blur-3xl"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                    
+
                     <div className="max-w-xl">
-                        
+
                         {/* Heading */}
                         <h1 className="animate-fadeInUp text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold text-gymfinity-900 leading-tight tracking-tight">
                             Boost your gym management. Start using{' '}
@@ -115,8 +203,20 @@ const Hero = () => {
                         </h1>
 
                         {/* Paragraph */}
-                        <p className="mt-6 animate-fadeInUp delay-150 text-base lg:text-lg text-gray-500 leading-relaxed max-w-lg">
-                            Generate clear financial reports to track revenue and expenses in real time.
+                        {/* <p className="mt-6 text-base lg:text-lg text-gray-500 leading-relaxed max-w-lg min-h-[28px]">
+  {text}
+  <span className="border-r-2 border-gymfinity-400 ml-1 animate-pulse"></span>
+</p> */}
+
+                        <p className="mt-6 text-base lg:text-lg leading-relaxed max-w-lg min-h-[32px]">
+                            <span className="bg-gradient-to-r from-gymfinity-400 via-gymfinity-500 to-gymfinity-600 bg-clip-text text-transparent font-medium transition-all duration-300">
+                                {text}
+                            </span>
+
+                            <span
+                                className={`ml-1 border-r-2 border-gymfinity-400 ${blink ? "opacity-100" : "opacity-0"
+                                    } transition-opacity duration-200`}
+                            ></span>
                         </p>
 
                         {/* Buttons */}

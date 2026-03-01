@@ -203,7 +203,7 @@ const teamMembers = [
     position: "50% 10%",
   },
   {
-    name: "Saif",
+    name: "Muhammad Saif",
     role: "Sales & Marketing Executive",
     image: saif,
     linkedin: 'https://www.linkedin.com/in/muhammad-saif-se'
@@ -329,7 +329,7 @@ const OurTeam = () => {
   >
     <h1 className="text-3xl md:text-5xl font-bold text-white">
       Meet The Team Behind{" "}
-      <span className="text-gymfinity-400">Gymfinity</span>
+      <span className="text-gymfinity-400">GymFinity</span>
     </h1>
     <p className="text-gray-400 mt-4 max-w-xl mx-auto">
       Passionate innovators building the future of gym management software.

@@ -173,7 +173,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <span className="text-xl font-bold tracking-tight">
-              Gymfinity
+              GymFinity
             </span>
 
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm mt-4 mb-6">

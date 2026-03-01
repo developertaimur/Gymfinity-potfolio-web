@@ -212,7 +212,7 @@ const Testimonials = () => {
         <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
           The Impact of <br />
           <span className="text-gymfinity-400">
-            Gymfinity on Fitness Businesses
+            GymFinity on Fitness Businesses
           </span>
         </h2>
       </div>

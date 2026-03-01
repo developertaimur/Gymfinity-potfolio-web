@@ -278,7 +278,7 @@ const Navbar = () => {
               className="h-12 lg:h-14 w-auto object-contain transition-all duration-300"
             />
             <span className="text-xl lg:text-2xl font-bold text-gymfinity-400 tracking-tight transition-all duration-300">
-              Gymfinity
+              GymFinity
             </span>
           </a>
 

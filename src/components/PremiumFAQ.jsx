@@ -4,9 +4,9 @@ import { Typewriter } from "react-simple-typewriter";
 
 const faqs = [
   {
-    question: "Is Gymfinity suitable for small and large gyms?",
+    question: "Is GymFinity suitable for small and large gyms?",
     answer:
-      "Yes. Gymfinity is designed to scale with your business. Whether you run a small local gym or a large fitness center, our system adapts to your needs.",
+      "Yes. GymFinity is designed to scale with your business. Whether you run a small local gym or a large fitness center, our system adapts to your needs.",
   },
   {
     question: "Can I track payments and unpaid members?",
@@ -14,14 +14,14 @@ const faqs = [
       "Absolutely. You can track paid, unpaid, expiring members, generate revenue reports, and manage financial data in real-time.",
   },
   {
-    question: "Does Gymfinity support attendance machines?",
+    question: "Does GymFinity support attendance machines?",
     answer:
-      "Yes. Gymfinity integrates with biometric and attendance devices to automate member check-ins and maintain accurate records.",
+      "Yes. GymFinity integrates with biometric and attendance devices to automate member check-ins and maintain accurate records.",
   },
   {
     question: "Is there a free demo available?",
     answer:
-      "Yes. We offer a live demo so you can experience how Gymfinity works before subscribing.",
+      "Yes. We offer a live demo so you can experience how GymFinity works before subscribing.",
   },
   {
     question: "Is my gym data secure?",
